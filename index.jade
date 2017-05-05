@@ -1,0 +1,48 @@
+//output: home.html
+doctype html
+html
+  head
+    link(rel="stylesheet", href="animate.css")
+    link(rel="icon", type="image/png", href="favicon.png")
+    meta(charset="utf-8")
+    title JY Studio
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="main.css")
+    link(href="https://fonts.googleapis.com/css?family=Poiret+One", rel="stylesheet", type="text/css")
+  
+  body.noscroll 
+    
+    .wrapper
+      label(for="toggler", class="toggle") ☰
+      .sidebar
+        ul
+          li.home-btn Home
+          li Projects
+          li.about-btn About Me
+          li Contact
+
+      div.wrap
+          
+        header
+            
+          .logo-wrap
+            img.logo(src="logo.png", width="80px", height="80px")
+
+          h1.intro Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+        
+        section.content
+        
+          div.aboutme
+            article.about
+              
+              h1 About Me
+              
+              hr
+              
+              p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin purus lacus, semper sit amet elit ut, maximus gravida odio. Suspendisse sed semper dolor, quis condimentum tellus. Nullam ligula orci, suscipit at laoreet sed, pretium a erat. Nunc blandit mollis quam, dignissim sagittis nisi porttitor placerat. Maecenas in rhoncus nisi. Ut justo massa, aliquet vel sapien a, maximus maximus arcu. Nunc euismod neque porttitor ante luctus faucibus. Nullam lorem diam, pharetra ac congue ac, viverra vitae felis.
+              
+          div.about-image
+            img.codeimage(src="article-bg.png", width="800px", height="800px")
+            
+    script(src="js/jquery-2.2.0.min.js")
+    script(src="js/function.js")

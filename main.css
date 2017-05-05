@@ -1,0 +1,157 @@
+html, body{
+  margin: 0;
+  padding: 0;
+ font-family: "poiret One", cursive;;
+  -webkit-font-smoothing: antialiased;
+}
+
+.noscroll {
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.wrapper {
+  overflow-y: hidden;
+  width: 200vw;
+  height: 100vh;
+}
+
+.wrap {
+  width: 200vw;
+  height: 100vh;
+  display: flex;
+}
+
+ul{
+  margin-top: 50px;
+  list-style: none;
+  width: 70%;
+}
+
+li {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 2em;
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-align: left;
+}
+
+li:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.sidebar {
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  z-index: 1;
+  background: rgba(51, 51, 51, 0.8);
+  width: 100%;
+  top: 0px;
+  bottom: 0px;
+  left: 100%;
+  -webkit-font-smoothing: antialiased;
+  transition: all 0.5s ease-out;
+}
+
+.toggle {
+  color: rgba(255, 255, 255, 0.95);
+  z-index: 2;
+  position: fixed;
+  transition: all 0.7s ease-out;
+  top: 10%;
+  right: 5%;
+  font-size: 40px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#toggler {
+  display: none;
+}
+
+/* Header */
+
+header {
+  height: 100vh;
+  width: 100%;
+  background-image: url('background.jpg');
+  background-size: cover;
+  z-index: 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+
+.logo-wrap {
+  width: 100%;
+  height: 50%;
+}
+
+.logo {
+  position: relative;
+  top: 34%;
+  left: 10%;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.intro {
+  font-size: 1.7em;
+  line-height: 1.7em;
+  font-style: normal;
+  color: white;
+  width: 35%;
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+  text-align: left;
+  position: relative;
+  top: 15%;
+  left: 6%;
+}
+
+/* About */
+  .content {
+    background-color: #222;
+    width: 100%;
+    display: flex;
+  }
+
+.content article {
+  padding: 150px 0px 0px 0px;
+  max-width: 800px;
+  line-height: 1.2em;
+  left: 0px;
+  margin-left: 5%;
+  text-align: center;
+  height: 100vh;
+  font-size: 2.5em;
+  opacity: 0;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.5s ease-in-out;
+}
+
+.content img {
+  float: right;
+  padding: 100px 0px 0px 0px;
+}
+
+.content article p {
+  font-size: 0.8em;
+}
+
+
+/* Iphone 6 Plus */
+@media (max-width: 414px) {
+    .intro {
+      width: 90%;
+      font-size: 1.2em;
+    }
+}
+
+@media (width: 800px) {
+  .intro {
+    width: 45%;
+    font-size: 1.5em;
+  }
+}
